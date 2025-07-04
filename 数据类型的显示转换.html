@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let str = '123'
+    console.log(Number(str))//123
+    console.log(Number('pink'))//NaN(也是number类型，表示非数字)
+    //parseInt(数据)只保留整数
+    console.log(parseInt('12px'))
+    console.log(parseInt('12.34px'))
+    console.log(parseInt('abc12.91px'))
+    //parseFloat(数据)，可以保留小数
+    console.log(parseFloat('12px'))
+    console.log(parseFloat('12.34px'))
+    console.log(parseInt('abc12.33px'))
+
+  </script>
+</body>
+
+</html>
