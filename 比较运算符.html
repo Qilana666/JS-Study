@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    //比较运算符 的比较结果都是布尔值  要么true 要么false
+    console.log(3 > 5)
+    console.log(3 >= 3)//true
+    //双等号 只判断值是否相等
+    console.log(2 == 2)//true
+    console.log(2 == '2')//true  //==比较值是否相等
+    //三等号 既判断值是否相等，也判断类型是否相等
+    //以后判断是否相等   用===
+    console.log(2 === 2)//true
+    console.log(2 === '2')//false  //===比较值和类型是否
+
+    console.log(NaN === NaN)//false  //NaN不等于任何值，包括它自己
+    console.log(2 !== '2')//false  不全等
+    // = 单等赋值
+    // ===判断（不建议使用==）
+
+    //字符串的比较
+    console.log('a' > 'b')//false
+    console.log('aa' < 'ab')//true
+    console.log('a' < 'A')//false  //ASCII码表中小
+  </script>
+</body>
+
+</html>
