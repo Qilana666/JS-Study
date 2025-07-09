@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let age = 18
+    console.log(false && age++)//逻辑与 有一假后面的age++不执行 一假则假
+    console.log(age)
+
+    console.log(true || age++)//逻辑或 有一真后面的不执行   一真则真
+    //逻辑或，都是假，以最后的值为准
+    //逻辑与，都是真，以最后的值为准
+    function fn(x, y) {
+      x = x || 0
+      y = y || 0
+      console.log(x + y)
+    }
+    fn(1, 2)
+  </script>
+
+</body>
+
+</html>
