@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    //对象的声明语法
+    //1.let 对象名={} (多用) 2.let对象名=new Object() 
+    let pink = {
+      'goods-name': '小米10青春版',
+      uname: 'pink老师',
+      age: 18,
+      gender: '女'
+    }
+    console.log(pink)//输出对象uname: 'pink老师'   age: 18 gender: '女'
+    console.log(typeof pink)//object
+    //2.使用属性 
+    // //1.查 对象名.属性名  两种方法
+    console.log(pink.uname)//pink老师 
+    console.log(pink['goods-name'])//对象名['属性名'](属性名是字符串)
+    console.log(pink.goods - name)
+    //2.改  把性别女改为男
+    pink.gender = '男'
+    console.log(pink.gender)
+    //3.增
+    pink.hobby = '弹吉他'
+    console.log(pink.hobby)
+    //4.删
+    delete pink.age
+    console.log(pink)
+  </script>
+</body>
+
+</html>
