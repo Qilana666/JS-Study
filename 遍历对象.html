@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    //遍历数组 for in
+    let obj = {
+      name: 'wby',
+      age: 19,
+      gender: '男'
+    }
+    //属性名  'name'  'age'  'gender'
+    for (let k in obj) {
+      //console.log(k)
+      // console.log(obj.name)
+      //console.log(log.k)
+      //错误写法console.log(obj.'name')
+      // console.log(obj['name'])
+      console.log(k)
+      console.log(obj[k])
+    }
+
+  </script>
+</body>
+
+</html>
