@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+
+  <body>
+    <script>
+      //随机点名，抽到的数就删掉，避免重复抽取
+      let arr = ['一', '抹', '亮', '色']
+      let random = Math.floor(Math.random() * arr.length)
+      document.write(arr[random])   //随机值
+
+      //splice(起始位置(下标)，删除几个元素)
+      arr.splice(random, 1)
+      console.log(arr)   //控制台打印数组中剩下的值
+    </script>
+  </body>
+
+  </html>
+</body>
+
+</html>
