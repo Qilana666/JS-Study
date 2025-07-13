@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      width: 200px;
+      height: 200px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">123</div>
+  <div class="box">abc</div>
+  <script>
+    //根据css选择器来获取DOM元素
+    //1.选择匹配的第一个元素
+    //document.querySelector('css选择器')
+    const box = document.querySelector('div')
+    //const box = document.querySelector('.box')
+    console.log(box)
+
+    //2.根据匹配的多个元素
+    //document.querySelectorAll('css选择器')
+    //document.querySelectAll('ul li')
+    //取多个元素使用时，不能直接修改，获取到的元素放在数组中
+    //只能通过遍历的方式一次给里面的元素做修改
+  </script>
+</body>
+
+</html>
